@@ -1,0 +1,44 @@
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@mixin fadeIn(){
+    animation: fade-in 1s;
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    30% {
+        background-position: 50% 50%;
+    }
+
+    50% {
+        background-position: 90% 10%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+@mixin gradientAnimation() {
+    animation: gradientAnimation 1s;
+}
+@keyframes loader {
+    0% {
+        background-position: -800px 0px;
+    }
+
+    100% {
+        background-position: 800px 0px;
+    }
+}
+@mixin loader() {
+    animation: loader 3s infinite linear;
+}

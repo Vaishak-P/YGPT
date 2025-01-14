@@ -1,0 +1,92 @@
+
+    @use './_animations' as anim;
+    @use './variables' as v;
+    @use './_media';
+.sidebar{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // text-align: center;
+    justify-content: space-between;
+    background-color: v.$bg2;
+    padding: 8px 15px;
+    .top{
+        display: flex;
+        flex-direction: column;
+        padding: 25px 15px;
+        color: v.$grey;
+        font-size: 20px;
+        transition: all 0.5s;
+        i{
+            cursor: pointer;
+        }
+    }
+    .new-chat{
+        margin-top: 50px;
+        display: inline-flex;
+        // align-items: center;
+        gap: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.5s;
+        border-radius: 50px;
+        &:hover{
+            padding: 10px 20px ;
+            background-color: v.$bg1;
+            color: v.$secondaryColor;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        i{
+            color: v.$secondaryColor;
+            font-size: 25px;
+            border-radius: 50px;
+        }
+    }
+    .recent{
+        display: flex;
+        flex-direction: column;
+        @include anim.fadeIn();
+
+        .recent-title{
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 20px 20px 0 0;
+            padding-bottom: 10px;
+        }
+        li{
+            list-style: none;
+        }
+        .recent-entry{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: all 0.5s;
+            &:hover{
+                background-color:v.$bg1 ;
+                margin-top: 5px;
+
+            }
+        }
+
+    }
+    .bottom{
+        .bottom-item{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 25px 15px;
+            color: v.$grey;
+            cursor: pointer;
+            // font-size: 20px;
+            &:hover {
+                background-color:v.$bg2 ;
+        
+            }
+        }
+    }
+}
