@@ -114,7 +114,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
   padding: 1rem 1rem;
   background-color: #1c1c1c;
   border-radius: 50px;
@@ -124,7 +123,6 @@ body {
   background: transparent;
   border: none;
   outline: none;
-  padding: 10px;
   font-size: 15px;
   color: rgb(56, 239, 125);
 }
@@ -144,7 +142,7 @@ body {
 }
 .main .result {
   padding: 0 5%;
-  max-height: 80vh;
+  max-height: 85vh;
   overflow-y: scroll;
   color: #b0b0b0;
 }
@@ -152,22 +150,18 @@ body {
   display: none;
 }
 .main .result i {
-  width: 40px;
   color: rgb(56, 239, 125);
 }
 .main .result .result-title {
   margin: 40px 0px;
   display: flex;
-  align-items: center;
   gap: 20px;
 }
 .main .result .result-data {
+  margin: 0;
   display: flex;
   align-items: start;
   gap: 20px;
-}
-.main .result .result-data i {
-  margin-right: 20px;
 }
 .main .result .result-data .loader {
   width: 100%;
@@ -206,7 +200,31 @@ body {
 
 @media (max-width: 600px) {
   .sidebar {
-    display: none;
+    max-height: 100vh;
+  }
+  .result-title {
+    display: flex;
+    flex-direction: column;
+  }
+  .result-title i {
+    left: 0;
+  }
+  body {
+    max-height: 100vh;
+  }
+  .result-container {
+    max-height: 85vh;
+    overflow-y: scroll;
+  }
+  .result-data {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-box {
+    padding: 0rem;
+    position: fixed;
+    bottom: 10px;
+    background-color: aqua;
   }
 }
 .sidebar {
