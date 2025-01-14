@@ -78,9 +78,13 @@ const Chat = () => {
                         <i class="fa-regular fa-paper-plane"></i>
                     </div>
             </div>
-            <p className="bottom-info">
+            <div className="bottom-info">
+
+            <a  href="https://www.linkedin.com/in/vaishakpanakkat/"><p>Made with ❤ by Vaishak</p></a>
+            <p >
                 Disclaimer: The information provided may not always be accurate. Verify independently.
             </p>
+            </div>
             </div>
         </div>
     </div>

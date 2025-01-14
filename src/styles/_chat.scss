@@ -121,7 +121,7 @@ body {
     }
     .result{
         padding:0 5%;
-        max-height: 90vh;
+        max-height: 80vh;
         overflow-y: scroll;
         color: v.$grey;
         &::-webkit-scrollbar{
@@ -170,4 +170,17 @@ body {
         font-weight: 400;
         line-height: 1.8;
         color: v.$grey;
+        // display: flex;
+        // gap: 30%;
+        justify-content: space-between;
+        a{
+            transition: all 0.5s;
+            text-decoration: none;
+            color: v.$secondaryColor;
+            &:hover{
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+        }
     }
