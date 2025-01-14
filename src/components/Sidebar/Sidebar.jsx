@@ -44,6 +44,9 @@ const Sidebar = () => {
         <div className="bottom">
             <div className="bottom-item">
                 <i class="fa-regular fa-circle-question"></i>
+                <p className='disclaimer'>
+                Disclaimer: The information provided may not always be accurate. Verify independently.
+                </p>
                 {extended?<p>Help</p>:null}
             </div>
             {/* <div className="bottom-item">

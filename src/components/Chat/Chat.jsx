@@ -81,9 +81,9 @@ const Chat = () => {
             <div className="bottom-info">
 
             <a  href="https://www.linkedin.com/in/vaishakpanakkat/"><p>Made with ❤ by Vaishak</p></a>
-            <p >
+            {/* <p >
                 Disclaimer: The information provided may not always be accurate. Verify independently.
-            </p>
+            </p> */}
             </div>
             </div>
         </div>

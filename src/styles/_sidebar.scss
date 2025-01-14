@@ -75,6 +75,7 @@
 
     }
     .bottom{
+        position: relative;
         .bottom-item{
             display: flex;
             align-items: center;
@@ -85,7 +86,23 @@
             // font-size: 20px;
             &:hover {
                 background-color:v.$bg2 ;
-        
+                
+            }
+            &:hover .disclaimer{
+                color: v.$secondaryColor;
+                display: block;
+                font-size: 10px;
+            }
+            .disclaimer{
+                transition: all 0.5s;
+                display:none;
+                position: fixed;
+                transform: rotate(270deg);
+                transform-origin: left bottom;
+                font-size: 8px;
+                text-align: center;
+                bottom: 10%;
+                left: 3rem;
             }
         }
     }
