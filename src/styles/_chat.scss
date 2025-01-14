@@ -7,7 +7,6 @@ body {
     animation: gradientAnimation 10s ease-in-out infinite;
     background-image: linear-gradient(0deg,v.$bg1, v.$bg2, v.$bg1, v.$bg2, v.$bg1, v.$bg2, v.$bg1,v.$bg2);
 }
-
 .main{
     flex:1 ;
     min-height: 100vh;
@@ -86,7 +85,7 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 2rem;
+                // gap: 2rem;
                 padding: 1rem 1rem;
                 background-color: v.$bg2;
                 border-radius: 50px;
@@ -96,7 +95,7 @@ body {
                     background:transparent;
                     border: none;
                     outline:none;
-                    padding: 10px;
+                    // padding: 1rem;
                     font-size:15px;
                     color: v.$secondaryColor;
                 }
@@ -121,31 +120,25 @@ body {
     }
     .result{
         padding:0 5%;
-        max-height: 80vh;
+        max-height: 85vh;
         overflow-y: scroll;
         color: v.$grey;
         &::-webkit-scrollbar{
             display: none;
         }
         i{
-            width: 40px;
-            // border-radius: 50%;
             color: v.$secondaryColor;
         }
         .result-title{
             margin: 40px 0px;
             display: flex;
-            align-items: center;
             gap: 20px;
         }
         .result-data{
+            margin: 0;
             display: flex;
             align-items: start;
             gap: 20px;
-            i{
-                margin-right: 20px;
-
-            }
             .loader {
                     width: 100%;
                     display: flex;

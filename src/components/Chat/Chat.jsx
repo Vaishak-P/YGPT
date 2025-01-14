@@ -13,52 +13,53 @@ const Chat = () => {
   return (
     <div className='main'>
         <div className="main-container">
-
-            {!showResult ?
-                <>
+            <div className="result-container">
+                {!showResult ?
+                    <>
                     <div className="greet">
-                    <p><span>Hello Dude,</span></p>
-                    <p>Lets have a chat ..</p>
-                </div>
-                <div className="cards">
-                    <div onClick={()=>onSent(demo1)} className="card" role="button" tabIndex='0'>
-                        <p>{demo1}</p>
-                        <i class="fa-regular fa-compass"></i>
+                        <p><span>Hello Dude,</span></p>
+                        <p>Lets have a chat ..</p>
                     </div>
-                    <div onClick={()=>onSent(demo2)} className="card">
-                        <p>{demo2}</p>
-                        <i class="fa-solid fa-utensils"></i>
+                    <div className="cards">
+                        <div onClick={()=>onSent(demo1)} className="card" role="button" tabIndex='0'>
+                            <p>{demo1}</p>
+                            <i class="fa-regular fa-compass"></i>
+                        </div>
+                        <div onClick={()=>onSent(demo2)} className="card">
+                            <p>{demo2}</p>
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <div onClick={()=>onSent(demo3)} className="card">
+                            <p>{demo3}</p>
+                            <i class="fa-regular fa-lightbulb"></i>
+                        </div>
+                        <div onClick={()=>onSent(demo4)} className="card">
+                            <p>{demo4}</p>
+                            <i class="fa-solid fa-code"></i>
+                        </div>
                     </div>
-                    <div onClick={()=>onSent(demo3)} className="card">
-                        <p>{demo3}</p>
-                        <i class="fa-regular fa-lightbulb"></i>
+                    </>
+                    :
+                    <div className='result'>
+                        <div className="result-title">
+                            <i class="fa-solid fa-user"></i>
+                            <p>{recentPrompt}</p>
+                        </div>
+                        <div className="result-data">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            {loading ?
+                                <div className='loader'>
+                                    <hr />
+                                    <hr />
+                                    <hr />
+                                </div>
+                                :
+                                <p dangerouslySetInnerHTML={{__html:resultData}}></p>
+                            }
+                        </div>
                     </div>
-                    <div onClick={()=>onSent(demo4)} className="card">
-                        <p>{demo4}</p>
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                </div>
-                </>
-                :
-                <div className='result'>
-                    <div className="result-title">
-                        <i class="fa-solid fa-user"></i>
-                        <p>{recentPrompt}</p>
-                    </div>
-                    <div className="result-data">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                        {loading ?
-                            <div className='loader'>
-                                <hr />
-                                <hr />
-                                <hr />
-                            </div>
-                            :
-                            <p dangerouslySetInnerHTML={{__html:resultData}}></p>
-                        }
-                    </div>
-                </div>
-            }
+                }
+            </div>
             
 
             <div className="main-bottom">
