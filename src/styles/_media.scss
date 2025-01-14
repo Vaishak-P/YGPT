@@ -1,5 +1,30 @@
 @media (max-width:600px){
     .sidebar{
-        display: none;
+        max-height: 100vh;
     }
+    .result-title {
+        display: flex;
+        flex-direction: column;
+        i{
+            left: 0;
+        }
+    }
+    body{
+        max-height: 100vh;
+    } 
+    .result-container{
+        max-height: 85vh;
+        overflow-y: scroll
+
+    }
+    .result-data {
+        display: flex;
+        flex-direction: column;
+    }
+     .search-box{
+        padding:  0rem;
+        position: fixed;
+        bottom: 10px;
+        background-color: aqua;
+     }
 }
