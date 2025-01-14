@@ -3,7 +3,6 @@
 @use './_animations' as anim;
 @use './_variables' as v;
 body {
-    // background-image: url(../../public/vite.svg);
     background-size: 300% 200%;
     animation: gradientAnimation 10s ease-in-out infinite;
     background-image: linear-gradient(0deg,v.$bg1, v.$bg2, v.$bg1, v.$bg2, v.$bg1, v.$bg2, v.$bg1,v.$bg2);
@@ -54,6 +53,7 @@ body {
                 position: relative;
                 cursor: pointer;
                 background-color: v.$bg2;
+                transition: all 0.5s;
                 i{
                     font-size: 20px;
                     color: v.$secondaryColor;
@@ -69,6 +69,10 @@ body {
                 &:hover p{
                     color: v.$secondaryColor;
                 }
+                &:hover{
+                    box-shadow: 0 0 10px v.$secondaryColor;
+
+                }
             }
         }
         .main-bottom{
@@ -82,8 +86,8 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 20px;
-                padding: 10px 20px;
+                gap: 2rem;
+                padding: 1rem 1rem;
                 background-color: v.$bg2;
                 border-radius: 50px;
 
@@ -98,16 +102,16 @@ body {
                 }
                 div{
                     display: flex;
-                    gap: 15px;
+                    gap: 1.5rem;
                     i{
                         transition: all 0.5s;
                         cursor: pointer;
                         border-radius: 50px;
-                        padding: 10px;
-                        width: 38px;
+                        padding: 1rem;
+                        // width: 3rem;
                         background-color: v.$secondaryColor;
                         &:hover{
-                            padding: 10px 12px;
+                            padding: 1rem 3rem;
                         }
                     }
                 }
