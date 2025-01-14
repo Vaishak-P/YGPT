@@ -6,6 +6,10 @@ import { useContext } from 'react'
 // import '../../../public/favicon.png';
 const Chat = () => {
     const {onSent,recentPrompt,showResult,loading,resultData,setInput,input} = useContext(Context);
+    const demo1 = 'Suggest some beautiful places to see in malappuram';
+    const demo2 = 'How to prepare thalasseri biriyani easily';
+    const demo3 = 'Suggest tips to improve muscle recovery';
+    const demo4 = 'Improve the readability of the following code';
   return (
     <div className='main'>
         <div className="main-container">
@@ -14,24 +18,23 @@ const Chat = () => {
                 <>
                     <div className="greet">
                     <p><span>Hello Dude,</span></p>
-
                     <p>Lets have a chat ..</p>
                 </div>
                 <div className="cards">
-                    <div className="card">
-                        <p>Suggest some beautiful places to see in malappuram</p>
+                    <div onClick={()=>onSent(demo1)} className="card" role="button" tabIndex='0'>
+                        <p>{demo1}</p>
                         <i class="fa-regular fa-compass"></i>
                     </div>
-                    <div className="card">
-                        <p>How to prepare thalasseri biriyani easily</p>
+                    <div onClick={()=>onSent(demo2)} className="card">
+                        <p>{demo2}</p>
                         <i class="fa-solid fa-utensils"></i>
                     </div>
-                    <div className="card">
-                        <p>Suggest tips to improve muscle recovery</p>
+                    <div onClick={()=>onSent(demo3)} className="card">
+                        <p>{demo3}</p>
                         <i class="fa-regular fa-lightbulb"></i>
                     </div>
-                    <div className="card">
-                        <p>Improve the readability of the following code</p>
+                    <div onClick={()=>onSent(demo4)} className="card">
+                        <p>{demo4}</p>
                         <i class="fa-solid fa-code"></i>
                     </div>
                 </div>
@@ -44,7 +47,6 @@ const Chat = () => {
                     </div>
                     <div className="result-data">
                         <i class="fa-solid fa-wand-magic-sparkles"></i>
-                        {/* <img src={assets.gemini_icon} alt="" /> */}
                         {loading ?
                             <div className='loader'>
                                 <hr />
