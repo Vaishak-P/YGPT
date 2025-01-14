@@ -82,6 +82,7 @@ body {
   position: relative;
   cursor: pointer;
   background-color: #1c1c1c;
+  transition: all 0.5s;
 }
 .main .main-container .cards .card i {
   font-size: 20px;
@@ -95,8 +96,11 @@ body {
   font-size: 15px;
   transition: all 0.5s;
 }
-.main .main-container .cards .card p:hover {
+.main .main-container .cards .card:hover p {
   color: rgb(56, 239, 125);
+}
+.main .main-container .cards .card:hover {
+  box-shadow: 0 0 10px rgb(56, 239, 125);
 }
 .main .main-container .main-bottom {
   position: absolute;
@@ -110,8 +114,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 10px 20px;
+  gap: 2rem;
+  padding: 1rem 1rem;
   background-color: #1c1c1c;
   border-radius: 50px;
 }
@@ -126,22 +130,21 @@ body {
 }
 .main .main-container .main-bottom .search-box div {
   display: flex;
-  gap: 15px;
+  gap: 1.5rem;
 }
 .main .main-container .main-bottom .search-box div i {
   transition: all 0.5s;
   cursor: pointer;
   border-radius: 50px;
-  padding: 10px;
-  width: 38px;
+  padding: 1rem;
   background-color: rgb(56, 239, 125);
 }
 .main .main-container .main-bottom .search-box div i:hover {
-  padding: 10px 12px;
+  padding: 1rem 3rem;
 }
 .main .result {
   padding: 0 5%;
-  max-height: 90vh;
+  max-height: 80vh;
   overflow-y: scroll;
   color: #b0b0b0;
 }
@@ -150,7 +153,6 @@ body {
 }
 .main .result i {
   width: 40px;
-  border-radius: 50%;
   color: rgb(56, 239, 125);
 }
 .main .result .result-title {
@@ -163,6 +165,9 @@ body {
   display: flex;
   align-items: start;
   gap: 20px;
+}
+.main .result .result-data i {
+  margin-right: 20px;
 }
 .main .result .result-data .loader {
   width: 100%;
@@ -186,12 +191,22 @@ body {
   font-weight: 400;
   line-height: 1.8;
   color: #b0b0b0;
+  justify-content: space-between;
+}
+.bottom-info a {
+  transition: all 0.5s;
+  text-decoration: none;
+  color: rgb(56, 239, 125);
+}
+.bottom-info a:hover {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 600px) {
   .sidebar {
     display: none;
-    background-color: yellow;
   }
 }
 .sidebar {
@@ -262,6 +277,9 @@ body {
   background-color: #000;
   margin-top: 5px;
 }
+.sidebar .bottom {
+  position: relative;
+}
 .sidebar .bottom .bottom-item {
   display: flex;
   align-items: center;
@@ -272,6 +290,22 @@ body {
 }
 .sidebar .bottom .bottom-item:hover {
   background-color: #1c1c1c;
+}
+.sidebar .bottom .bottom-item:hover .disclaimer {
+  color: rgb(56, 239, 125);
+  display: block;
+  font-size: 10px;
+}
+.sidebar .bottom .bottom-item .disclaimer {
+  transition: all 0.5s;
+  display: none;
+  position: fixed;
+  transform: rotate(270deg);
+  transform-origin: left bottom;
+  font-size: 8px;
+  text-align: center;
+  bottom: 10%;
+  left: 3rem;
 }
 
 * {
