@@ -131,9 +131,6 @@ body {
   padding: 1rem;
   background-color: rgb(56, 239, 125);
 }
-.main .main-container .main-bottom .search-box div i:hover {
-  transform: rotate(-40deg);
-}
 .main .result {
   padding: 0 5%;
   max-height: 85vh;
@@ -214,7 +211,6 @@ body {
     flex-direction: column;
   }
   .search-box {
-    width: 72%;
     padding: 0rem;
     position: fixed;
     bottom: 10px;
