@@ -37,6 +37,7 @@ body {
 
 .main {
   flex: 1;
+  height: 100vh;
   padding-bottom: 15vh;
   position: relative;
 }
@@ -73,7 +74,6 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 15px;
   padding: 20px;
-  margin-bottom: 2rem;
 }
 .main .main-container .cards .card {
   height: 200px;
@@ -178,7 +178,6 @@ body {
   margin: 10px 0;
   font-size: 10px;
   font-weight: 400;
-  line-height: 1.8;
   color: #b0b0b0;
   justify-content: space-between;
 }
