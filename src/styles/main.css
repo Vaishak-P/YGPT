@@ -123,7 +123,6 @@ body {
 }
 .main .main-container .main-bottom .search-box div {
   display: flex;
-  gap: 1.5rem;
 }
 .main .main-container .main-bottom .search-box div i {
   transition: all 0.5s;
@@ -249,13 +248,6 @@ body {
   cursor: pointer;
   transition: all 0.5s;
   border-radius: 50px;
-}
-.sidebar .new-chat:hover {
-  padding: 10px 20px;
-  background-color: #000;
-  color: rgb(56, 239, 125);
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 .sidebar .new-chat i {
   color: rgb(56, 239, 125);

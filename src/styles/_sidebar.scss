@@ -30,13 +30,13 @@
         cursor: pointer;
         transition: all 0.5s;
         border-radius: 50px;
-        &:hover{
-            padding: 10px 20px ;
-            background-color: v.$bg1;
-            color: v.$secondaryColor;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
+        // &:hover{
+        //     padding: 10px 20px ;
+        //     background-color: v.$bg1;
+        //     color: v.$secondaryColor;
+        //     text-transform: uppercase;
+        //     letter-spacing: 2px;
+        // }
         i{
             color: v.$secondaryColor;
             font-size: 25px;
