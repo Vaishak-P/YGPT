@@ -70,13 +70,13 @@ const Chat = () => {
                     //event should be passed to determine which key is that
                     onKeyDown={(e)=>{
                         if (e.key === 'Enter'){ //NOT: 'enter'
-                            onSent();
+                            onSent(input);
                         }
                     }}
                     type="text" 
                     placeholder="Enter a prompt" />
                     <div>
-                        <i class="fa-regular fa-paper-plane"></i>
+                        <i onClick={()=>onSent(input)} class="fa-regular fa-paper-plane"></i>
                     </div>
             </div>
             <div className="bottom-info">

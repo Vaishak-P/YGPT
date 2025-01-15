@@ -38,7 +38,6 @@ body {
 .main {
   flex: 1;
   height: 100vh;
-  padding-bottom: 15vh;
   position: relative;
 }
 .main .nav {
@@ -104,17 +103,19 @@ body {
 }
 .main .main-container .main-bottom {
   position: relative;
-  bottom: 0;
-  padding: 0px 2vh;
+  margin: 0px 2vh;
 }
 .main .main-container .main-bottom .search-box {
+  position: fixed;
+  width: 65vw;
+  bottom: 10px;
   display: flex;
   padding: 1rem 1rem;
   background-color: #1c1c1c;
   border-radius: 50px;
 }
 .main .main-container .main-bottom .search-box input {
-  flex: 1;
+  flex: 2;
   background: transparent;
   border: none;
   outline: none;
@@ -211,8 +212,7 @@ body {
     flex-direction: column;
   }
   .search-box {
-    padding: 0rem;
-    position: fixed;
+    min-width: 72vw;
     bottom: 10px;
     background-color: aqua;
   }
