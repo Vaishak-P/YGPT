@@ -13,7 +13,7 @@
         max-height: 100vh;
     } 
     .result-container{
-        max-height: 85vh;
+        max-height: 89vh;
         overflow-y: scroll
 
     }
@@ -22,9 +22,12 @@
         flex-direction: column;
     }
      .search-box{
+        width: 72%;
         padding:  0rem;
         position: fixed;
         bottom: 10px;
         background-color: aqua;
      }
+    
+
 }

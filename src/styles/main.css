@@ -37,7 +37,6 @@ body {
 
 .main {
   flex: 1;
-  min-height: 100vh;
   padding-bottom: 15vh;
   position: relative;
 }
@@ -58,7 +57,7 @@ body {
   margin: auto;
 }
 .main .main-container .greet {
-  margin: 50px 0px;
+  margin: 2rem 0;
   font-size: 56px;
   color: #b0b0b0;
   font-weight: 500;
@@ -74,6 +73,7 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 15px;
   padding: 20px;
+  margin-bottom: 2rem;
 }
 .main .main-container .cards .card {
   height: 200px;
@@ -103,17 +103,12 @@ body {
   box-shadow: 0 0 10px rgb(56, 239, 125);
 }
 .main .main-container .main-bottom {
-  position: absolute;
+  position: relative;
   bottom: 0;
-  width: 100%;
-  max-width: 900px;
-  padding: 0px 20px;
-  margin: auto;
+  padding: 0px 2vh;
 }
 .main .main-container .main-bottom .search-box {
   display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 1rem 1rem;
   background-color: #1c1c1c;
   border-radius: 50px;
@@ -138,7 +133,7 @@ body {
   background-color: rgb(56, 239, 125);
 }
 .main .main-container .main-bottom .search-box div i:hover {
-  padding: 1rem 3rem;
+  transform: rotate(-40deg);
 }
 .main .result {
   padding: 0 5%;
@@ -213,7 +208,7 @@ body {
     max-height: 100vh;
   }
   .result-container {
-    max-height: 85vh;
+    max-height: 89vh;
     overflow-y: scroll;
   }
   .result-data {
@@ -221,6 +216,7 @@ body {
     flex-direction: column;
   }
   .search-box {
+    width: 72%;
     padding: 0rem;
     position: fixed;
     bottom: 10px;
